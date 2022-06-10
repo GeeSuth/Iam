@@ -38,20 +38,35 @@ body {
     }
 }
 
+.div-profile {
+    height: 100%;
+    margin: 0px;
+    position: fixed;
+    width: auto;
+}
+
+.div-right {
+    height: 100%;
+    margin-left: auto;
+}
+
+
+/*
 @media only screen and (min-width: 768px) {
     .div-profile {
         height: 100%;
-        /*width: 50%;*/
+
         margin: 0px;
         position: fixed;
         width: auto;
     }
     .div-right {
         height: 100%;
-        /*width: 50%;*/
+
         margin-left: auto;
     }
 }
+*/
 
 div {
     padding-bottom: 1%;
