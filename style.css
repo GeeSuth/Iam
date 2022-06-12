@@ -68,6 +68,7 @@ body {
     .div-right {
         height: 100%;
         margin-left: auto;
+        padding-left: 2%;
     }
     .card-right-postion {
         margin-left: 5%;
