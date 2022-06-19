@@ -187,7 +187,7 @@ p.periods {
     transform: rotate(360deg);
     padding-right: -74%;
     position: absolute;
-    right: -55px;
+    right: -60px;
     z-index: -1;
     border-radius: 6px 5px 5px 0px;
     padding-top: 10px;
@@ -202,4 +202,12 @@ p.periods {
 
 .card {
     box-shadow: 0 7px 30px rgba(0, 0, 0, 0.30);
+}
+
+
+/* Project Image */
+
+.card-project-img {
+    height: 400px;
+    width: auto;
 }
