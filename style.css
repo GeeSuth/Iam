@@ -1,46 +1,47 @@
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
-body {
-    /*background-color: antiquewhite;*/
-    padding: 10%;
-    /*background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);*/
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
-    padding-top: 160px;
-}
-
-.circlePicOfMe {
-    width: 140px;
-    height: 140px;
-    text-align: center;
-    /*background-image: url("img/im-white.jpg");*/
-    /*background-image: url("img/im-removebg.png");*/
-    background-image: url("img/im1.png");
-    background-size: cover;
-    /*mix-blend-mode: multiply;*/
-    margin: auto;
-    margin-top: -140px !important;
-}
-
-html,
-body {
-    width: 100%;
-    height: 100%;
-}
-
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
+    @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
+    @import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+    body {
+        /*background-color: antiquewhite;*/
+        padding: 10%;
+        /*background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);*/
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+        padding-top: 160px;
+        background-color: lightgray;
+        font-family: 'ABeeZee', sans-serif;
     }
-    50% {
-        background-position: 100% 50%;
+    
+    .circlePicOfMe {
+        width: 140px;
+        height: 140px;
+        text-align: center;
+        /*background-image: url("img/im-white.jpg");*/
+        /*background-image: url("img/im-removebg.png");*/
+        background-image: url("img/im1.png");
+        background-size: cover;
+        /*mix-blend-mode: multiply;*/
+        margin: auto;
+        margin-top: -140px !important;
     }
-    100% {
-        background-position: 0% 50%;
+    
+    html,
+    body {
+        width: 100%;
+        height: 100%;
     }
-}
-
-
-/*
+    
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+    /*
 .div-profile {
     height: 100%;
     margin: 0px;
@@ -53,294 +54,274 @@ body {
     margin-left: auto;
 }
 */
-
-.p-location {
-    font-size: x-small;
-}
-
-@media only screen and (min-width: 768px) {
-    .div-profile {
-        height: 100%;
-        margin: 0px;
-        position: fixed;
-        width: auto;
+    
+    .p-location {
+        font-size: x-small;
     }
-    .div-right {
-        height: 100%;
-        margin-left: auto;
-        padding-left: 2%;
+    
+    @media only screen and (min-width: 768px) {
+        .div-profile {
+            height: 100%;
+            margin: 0px;
+            position: fixed;
+            width: auto;
+        }
+        .div-right {
+            height: 100%;
+            margin-left: auto;
+            padding-left: 2%;
+        }
+        .card-right-postion {
+            margin-left: 5%;
+        }
     }
-    .card-right-postion {
-        margin-left: 5%;
-    }
-}
-
-
-/*div {
+    /*div {
     padding-bottom: 1%;
     margin-bottom: 1%;
 }*/
-
-.card {
-    padding-bottom: 1%;
-    margin-bottom: 3%;
-}
-
-.card-header {
-    height: 41px;
-}
-
-
-/*######## [Chips] ###########*/
-
-.chip-container {
-    width: 100%;
-    padding: 10px;
-    background: #ffffff;
-    font-family: "Roboto";
-}
-
-.chip-p {
-    height: 3px;
-    color: white;
-}
-
-.chip-container .basic-chip a {
-    color: inherit;
-}
-
-.chip-title {
-    padding: 20px 10px;
-    font-size: 14px;
-}
-
-.basic-chip {
-    padding: 5px 10px;
-    border-radius: 50px;
-    display: inline-flex;
-    margin: 5px;
-}
-
-.click-chip,
-.click-chip-hover {
-    padding: 5px 10px;
-    border-radius: 50px;
-    display: inline-flex;
-    margin: 5px;
-    cursor: pointer;
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
-}
-
-.click-chip-hover:hover {
-    filter: brightness(85%);
-}
-
-.outline {
-    border: 1.5px solid #cccccc;
-    color: #cccccc;
-    outline: none;
-}
-
-.icon {
-    /*background: #bdbdbd;*/
-    color: #616161;
-    margin: 0px 5px 0px -5px;
-    background: #bbbbbb;
-    padding: 2px;
-    border-radius: 50px;
-}
-
-.fa-times,
-.fa-times-circle {
-    margin: 0px -5px 0px 5px;
-}
-
-.image-for-chip {
-    width: 25px;
-    height: 25px;
-}
-
-
-/*######## [End Chips] ###########*/
-
-p.periods {
-    font-size: small;
-}
-
-
-/*####### Silder Project #######*/
-
-.break {
-    height: 2px;
-    margin-left: 38%;
-    margin-bottom: 35px;
-}
-
-
-/* Info div */
-
-.info-div {
-    writing-mode: vertical-rl;
-    text-align: right;
-    transform: rotate(360deg);
-    padding-right: -74%;
-    position: absolute;
-    right: -60px;
-    z-index: -1;
-    border-radius: 6px 5px 5px 0px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    color: white;
-    margin-top: -7px;
-    width: 100%;
-}
-
-
-/* Shadow */
-
-.card {
-    box-shadow: 0 7px 30px rgba(0, 0, 0, 0.30);
-}
-
-
-/* Project Image */
-
-.card-project-img {
-    height: 200px;
-    width: auto;
-}
-
-
-/* Modal Show Image */
-
-#myImg {
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-#myImg:hover {
-    opacity: 0.7;
-}
-
-
-/* The Modal (background) */
-
-.modal {
-    display: none;
-    /* Hidden by default */
-    position: fixed;
-    /* Stay in place */
-    z-index: 1;
-    /* Sit on top */
-    padding-top: 100px;
-    /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%;
-    /* Full width */
-    height: 100%;
-    /* Full height */
-    overflow: auto;
-    /* Enable scroll if needed */
-    background-color: rgb(0, 0, 0);
-    /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.9);
-    /* Black w/ opacity */
-}
-
-
-/* Modal Content (image) */
-
-.modal-content {
-    margin: auto;
-    display: block;
-    width: 80%;
-    /*max-width: 700px;*/
-}
-
-
-/* Caption of Modal Image */
-
-#caption {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-    text-align: center;
-    color: #ccc;
-    padding: 10px 0;
-    height: 150px;
-}
-
-
-/* Add Animation */
-
-.modal-content,
-#caption {
-    -webkit-animation-name: zoom;
-    -webkit-animation-duration: 0.6s;
-    animation-name: zoom;
-    animation-duration: 0.6s;
-}
-
-@-webkit-keyframes zoom {
-    from {
-        -webkit-transform: scale(0)
+    
+    .card {
+        padding-bottom: 1%;
+        margin-bottom: 3%;
     }
-    to {
-        -webkit-transform: scale(1)
+    
+    .card-header {
+        height: 41px;
     }
-}
-
-@keyframes zoom {
-    from {
-        transform: scale(0)
+    /*######## [Chips] ###########*/
+    
+    .chip-container {
+        width: 100%;
+        padding: 10px;
+        background: #ffffff;
+        font-family: "Roboto";
     }
-    to {
-        transform: scale(1)
+    
+    .chip-p {
+        height: 3px;
+        color: white;
+        font-family: 'ABeeZee', sans-serif;
+        font-size: small;
     }
-}
-
-
-/* The Close Button */
-
-.closeImageModal {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.closeImageModal:hover,
-.closeImageModal:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-
-/* 100% Image Width on Smaller Screens */
-
-@media only screen and (max-width: 700px) {
-    .modal-content {
+    
+    .chip-container .basic-chip a {
+        color: inherit;
+    }
+    
+    .chip-title {
+        padding: 20px 10px;
+        font-size: 14px;
+    }
+    
+    .basic-chip {
+        padding: 5px 10px;
+        border-radius: 50px;
+        display: inline-flex;
+        margin: 5px;
+    }
+    
+    .click-chip,
+    .click-chip-hover {
+        padding: 5px 10px;
+        border-radius: 50px;
+        display: inline-flex;
+        margin: 5px;
+        cursor: pointer;
+        /*background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);*/
+        background: linear-gradient(-45deg, #84383C, #755D6D, #65819E, #45CAFF);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+    }
+    
+    .click-chip-hover:hover {
+        filter: brightness(85%);
+    }
+    
+    .outline {
+        border: 1.5px solid #cccccc;
+        color: #cccccc;
+        outline: none;
+    }
+    
+    .icon {
+        /*background: #bdbdbd;*/
+        color: #616161;
+        margin: 0px 5px 0px -5px;
+        background: #bbbbbb;
+        padding: 2px;
+        border-radius: 50px;
+    }
+    
+    .fa-times,
+    .fa-times-circle {
+        margin: 0px -5px 0px 5px;
+    }
+    
+    .image-for-chip {
+        width: 25px;
+        height: 25px;
+    }
+    /*######## [End Chips] ###########*/
+    
+    p.periods {
+        font-size: small;
+    }
+    /*####### Silder Project #######*/
+    
+    .break {
+        height: 2px;
+        margin-left: 38%;
+        margin-bottom: 35px;
+    }
+    /* Info div */
+    
+    .info-div {
+        writing-mode: vertical-rl;
+        text-align: right;
+        transform: rotate(360deg);
+        padding-right: -74%;
+        position: absolute;
+        right: -60px;
+        z-index: -1;
+        border-radius: 6px 0px 0px 0px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: white;
+        margin-top: -7px;
         width: 100%;
     }
-}
-
-footer {
-    text-align: center;
-    padding: 3px;
-    background-color: #0d6efd;
-    color: white;
-    border-radius: 10px 10px 0px 0px;
-}
-
-.card-title {
-    color: black;
-}
+    /* Shadow */
+    
+    .card {
+        box-shadow: 0 7px 30px rgba(0, 0, 0, 0.30);
+    }
+    /* Project Image */
+    
+    .card-project-img {
+        height: 200px;
+        width: auto;
+    }
+    /* Modal Show Image */
+    
+    #myImg {
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    
+    #myImg:hover {
+        opacity: 0.7;
+    }
+    /* The Modal (background) */
+    
+    .modal {
+        display: none;
+        /* Hidden by default */
+        position: fixed;
+        /* Stay in place */
+        z-index: 1;
+        /* Sit on top */
+        padding-top: 100px;
+        /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%;
+        /* Full width */
+        height: 100%;
+        /* Full height */
+        overflow: auto;
+        /* Enable scroll if needed */
+        background-color: rgb(0, 0, 0);
+        /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.9);
+        /* Black w/ opacity */
+    }
+    /* Modal Content (image) */
+    
+    .modal-content {
+        margin: auto;
+        display: block;
+        width: 80%;
+        /*max-width: 700px;*/
+    }
+    /* Caption of Modal Image */
+    
+    #caption {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+        text-align: center;
+        color: #ccc;
+        padding: 10px 0;
+        height: 150px;
+    }
+    /* Add Animation */
+    
+    .modal-content,
+    #caption {
+        -webkit-animation-name: zoom;
+        -webkit-animation-duration: 0.6s;
+        animation-name: zoom;
+        animation-duration: 0.6s;
+    }
+    
+    @-webkit-keyframes zoom {
+        from {
+            -webkit-transform: scale(0)
+        }
+        to {
+            -webkit-transform: scale(1)
+        }
+    }
+    
+    @keyframes zoom {
+        from {
+            transform: scale(0)
+        }
+        to {
+            transform: scale(1)
+        }
+    }
+    /* The Close Button */
+    
+    .closeImageModal {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+    
+    .closeImageModal:hover,
+    .closeImageModal:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    /* 100% Image Width on Smaller Screens */
+    
+    @media only screen and (max-width: 700px) {
+        .modal-content {
+            width: 100%;
+        }
+    }
+    
+    footer {
+        text-align: center;
+        padding: 3px;
+        background-color: #b9b8b8;
+        color: white;
+        border-radius: 10px 10px 0px 0px;
+    }
+    
+    .card-title {
+        color: black;
+    }
+    
+    .list-group-item.active {
+        background-color: #84383c;
+        border-color: #84383c;
+    }
