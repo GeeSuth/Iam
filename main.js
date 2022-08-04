@@ -2,7 +2,40 @@ function openLink(url) {
     window.open(url, "_blank").focus();
 }
 
+var EndFixedProfile = 2700;
 
+$(window).scroll(function(e) {
+    var scrollHeight = $(this).scrollTop();
+    console.log(scrollHeight);
+    var $el = $('.div-profile');
+    if ($(window).width() < 768)
+        return;
+
+    if (scrollHeight > EndFixedProfile) {
+        $el.css({
+            'position': 'static',
+            'top': '60px',
+            'height': '100%',
+            'margin': '0px',
+            'width': 'auto',
+            'top': '60px'
+        });
+    } else {
+        $el.css({
+            'position': 'fixed',
+            'top': '60px',
+            'height': '100%',
+            'margin': '0px',
+            'width': 'auto',
+            'top': '60px'
+        });
+
+    }
+
+
+
+
+});
 
 var modal = document.getElementById("ModalViewImage");
 

@@ -1,7 +1,3 @@
-document.getElementById("demo").innerHTML = "I have changed!";
-
-
-
 $(document).ready(function() {
 
     // Experinces 
@@ -20,8 +16,9 @@ $(document).ready(function() {
     // Projects
     $('#pro-win').append(readTextFile('projects/win.htm'));
     $('#pro-web').append(readTextFile('projects/web.htm'));
+    $('#pro-some').append(readTextFile('projects/some.htm'));
 
-    window.scrollTo(0);
+    //window.scrollTo(0,0);
 
 })
 
