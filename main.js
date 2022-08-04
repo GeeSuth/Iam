@@ -57,7 +57,7 @@ $(window).scroll(function(e) {
             'margin': '0px',
             'width': 'auto',
             'top': '60px',
-            'z-index': '-1',
+            'z-index': '0',
 
         });
 
