@@ -331,3 +331,26 @@
     a {
         color: #84383C;
     }
+    /* Scollbar */
+    
+     ::-webkit-scrollbar {
+        width: 20px;
+    }
+    /* Track */
+    
+     ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 10px grey;
+        border-radius: 10px;
+    }
+    /* Handle */
+    
+     ::-webkit-scrollbar-thumb {
+        /*background: var(--mud-palette-appbar-background) !important;*/
+        background: #84383C !important;
+    }
+    /* Handle on hover */
+    
+     ::-webkit-scrollbar-thumb:hover {
+        background: #b30000;
+    }
+    /* End ScrollBar */
