@@ -377,10 +377,38 @@
     }
     
     .thanks-card {
+        margin-top: 10px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: all .2s ease-in-out;
+        border-radius: 60px 60px;
+    }
+    
+    .thanks-card:hover {
+        transform: scale(1.1);
     }
     
     .thanks-card p {
         font-size: 4rem;
+        color: #84383c;
+    }
+    
+    .flag-sa {
+        background-image: url('https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/flags/4x3/sa.svg');
+    }
+    
+    .flag-ma {
+        background-image: url('https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/flags/4x3/ma.svg');
+    }
+    
+    .flag-eg {
+        background-image: url('https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/flags/4x3/eg.svg');
+    }
+    
+    .flag-us {
+        background-image: url('https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/flags/4x3/us.svg');
+    }
+    
+    .flag-ye {
+        background-image: url('https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/flags/4x3/ye.svg');
     }
     /* End Thank you Page */
