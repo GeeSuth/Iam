@@ -354,3 +354,33 @@
         background: #b30000;
     }
     /* End ScrollBar */
+    
+    .thanks {
+        padding-left: 40%;
+        margin-top: -8%;
+    }
+    
+    .thanks a {
+        text-decoration: auto;
+    }
+    
+    .thanks p {
+        font-weight: bold;
+        font-size: 40px;
+    }
+    /* Thanks Page */
+    
+    .img-circle {
+        border-radius: 50%;
+        width: 120px;
+        height: 130px;
+    }
+    
+    .thanks-card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+    
+    .thanks-card p {
+        font-size: 4rem;
+    }
+    /* End Thank you Page */
