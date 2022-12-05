@@ -20,6 +20,15 @@ $(document).ready(function() {
 
     //window.scrollTo(0,0);
 
+    //Check if the visitor come from PDF file 
+    try {
+        const urlParms = new URLSearchParams(window.location.search);
+        if (urlParms.get('frompdf') == 'true') {
+            alert("Thank you for coming from PDF file to My Digital CV!");
+            window.history.pushState("", "", "/");
+        }
+    } catch {}
+
 })
 
 function readTextFile(file) {
