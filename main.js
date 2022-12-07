@@ -5,37 +5,13 @@ function openLink(url) {
 var EndFixedProfile = 2700;
 
 $(window).scroll(function(e) {
-    var some = document.querySelector("#pro-some");
+    /*var some = document.querySelector("#pro-some");
     console.log(some.scrollTop);
     var scrollHeight = $(this).scrollTop();
     console.log(scrollHeight);
     var $el = $('.div-profile');
     if ($(window).width() < 768)
         return;
-
-    /*
-    if (scrollHeight > EndFixedProfile) {
-        $el.css({
-            
-            'top': '60px',
-            'height': '100%',
-            'margin': '0px',
-            'width': 'auto',
-            'top': '60px',
-            'z-index': '0'
-        });
-    } else {
-        $el.css({
-            'position': 'fixed',
-            'top': '60px',
-            'height': '100%',
-            'margin': '0px',
-            'width': 'auto',
-            'top': '60px',
-            'z-index': '-1'
-        });
-
-    }*/
 
 
     if (scrollHeight > EndFixedProfile) {
@@ -62,7 +38,7 @@ $(window).scroll(function(e) {
         });
 
     }
-
+*/
 
 
 
