@@ -46,3 +46,19 @@ function readTextFile(file) {
     rawFile.send(null);
     return allText;
 }
+
+const driver = window.driver.js.driver;
+
+const driverObj = driver();
+
+setTimeout(() => {
+    driverObj.highlight({
+        element: "#list-example",
+        popover: {
+          title: "Title",
+          description: "Description"
+        }
+      });
+}, 3000);
+
+
