@@ -1,22 +1,23 @@
 $(document).ready(function() {
 
+    $('#on-boarding-right').append(readTextFile('onboarding/onboarding-right.htm'));
     // Experinces 
-    $('#exp-fleet').append(readTextFile('jobs/fleet.system.htm'));
+    /*$('#exp-fleet').append(readTextFile('jobs/fleet.system.htm'));
     $('#exp-itec').append(readTextFile('jobs/itec.htm'));
     $('#exp-reemas').append(readTextFile('jobs/reemas.htm'));
-    $('#exp-sky').append(readTextFile('jobs/skyCenter.htm'));
+    $('#exp-sky').append(readTextFile('jobs/skyCenter.htm'));*/
 
 
 
     // Lesson
-    $('#les-cs50').append(readTextFile('lessons/cs50.htm'));
-    $('#les-api').append(readTextFile('lessons/api.htm'));
+    /*$('#les-cs50').append(readTextFile('lessons/cs50.htm'));
+    $('#les-api').append(readTextFile('lessons/api.htm'));*/
 
 
     // Projects
-    $('#pro-win').append(readTextFile('projects/win.htm'));
+    /*$('#pro-win').append(readTextFile('projects/win.htm'));
     $('#pro-web').append(readTextFile('projects/web.htm'));
-    $('#pro-some').append(readTextFile('projects/some.htm'));
+    $('#pro-some').append(readTextFile('projects/some.htm'));*/
 
     //window.scrollTo(0,0);
 
