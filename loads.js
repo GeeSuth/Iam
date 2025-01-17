@@ -2,10 +2,7 @@ $(document).ready(function() {
 
     $('#on-boarding-right').append(readTextFile('onboarding/onboarding-right.htm'));
     // Experinces 
-    /*$('#exp-fleet').append(readTextFile('jobs/fleet.system.htm'));
-    $('#exp-itec').append(readTextFile('jobs/itec.htm'));
-    $('#exp-reemas').append(readTextFile('jobs/reemas.htm'));
-    $('#exp-sky').append(readTextFile('jobs/skyCenter.htm'));*/
+    $('#work-exp').append(readTextFile('components/work-experince.htm'));
 
 
 

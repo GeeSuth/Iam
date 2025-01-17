@@ -1,0 +1,348 @@
+:root {
+    --left-width: 400px;
+    --primary-color: #8b3a3a;
+    
+    /* Add theme variables */
+    --bg-color: #f0f0f0;
+    --card-bg: white;
+    --text-color: #333;
+    --title-color: #666;
+    --border-color: #eee;
+}
+
+/* Dark theme variables */
+[data-theme="dark"] {
+    --bg-color: #1a1a1a;
+    --card-bg: #2d2d2d;
+    --text-color: #e0e0e0;
+    --title-color: #b0b0b0;
+    --border-color: #404040;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    background-color: var(--bg-color);
+    font-family: 'Segoe UI', sans-serif;
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.split-container {
+    display: flex;
+    min-height: 100vh;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.left {
+    flex: 0 0 var(--left-width);
+    position: sticky;
+    top: 2rem;
+    height: fit-content;
+    background: var(--card-bg);
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.right {
+    flex: 1;
+    background: var(--card-bg);
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.right.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 1.5rem;
+    display: block;
+}
+
+.name {
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.title {
+    color: var(--title-color);
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.contact-info {
+    margin-bottom: 2rem;
+}
+
+.contact-info a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text-color);
+    text-decoration: none;
+    margin-bottom: 0.8rem;
+    transition: color 0.3s;
+}
+
+.contact-info a:hover {
+    color: var(--primary-color);
+}
+
+.section-title {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 2rem;
+}
+
+.tech-badge {
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    background: #e9ecef;
+    color: #333;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    padding: 0.8rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.nav-links li:last-child {
+    border-bottom: none;
+}
+
+.nav-links a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--primary-color);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .split-container {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .left {
+        position: relative;
+        top: 0;
+        width: 100%;
+    }
+
+    .right {
+        width: 100%;
+    }
+}
+
+/* Theme switch styles */
+.theme-switch {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 1rem 0;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: var(--primary-color);
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+.theme-label {
+    font-size: 0.9rem;
+}
+
+/* Remove the manual margin-top spacing since we'll handle it differently */
+.content-container .right {
+    margin-top: 2rem !important;
+}
+
+/* Modern animation styles */
+.right {
+    opacity: 0;
+    transition: all 1.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+    filter: blur(5px);
+    transform-origin: center;
+}
+
+/* First div: Zoom in from back with slight rotation */
+.right:nth-child(1) {
+    transform: perspective(1000px) translateZ(-300px) rotateY(-10deg);
+    transition-delay: 0.1s;
+}
+
+/* Second div: Slide and flip from left */
+.right:nth-child(2) {
+    transform: perspective(1000px) translateX(-100%) rotateY(45deg);
+    transition-delay: 0.3s;
+}
+
+/* Third div: Scale up from bottom with twist */
+.right:nth-child(3) {
+    transform: perspective(1000px) translateY(100px) scale(0.8) rotateX(45deg);
+    transition-delay: 0.5s;
+}
+
+/* Visible state with clean transform */
+.right.visible {
+    opacity: 1;
+    transform: perspective(1000px) translate3d(0, 0, 0) rotate(0deg) scale(1);
+    filter: blur(0);
+}
+
+/* Modern hover effect */
+.right:hover {
+    transform: none !important;
+    animation: none !important;
+}
+
+/* Add animated border effect */
+.right {
+    position: relative;
+    overflow: visible;
+}
+
+.right::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border-radius: 15px;
+    background: linear-gradient(
+        90deg,
+        var(--primary-color),
+        #ff6b6b,
+        #4ecdc4,
+        var(--primary-color)
+    );
+    background-size: 400% 400%;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 0.3s ease;
+}
+
+.right:hover::before {
+    opacity: 1;
+    animation: borderAnimation 3s ease-in-out infinite;
+}
+
+@keyframes borderAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Ensure the card maintains its background */
+.right {
+    background: var(--card-bg);
+    z-index: 1;
+}
+
+/* Container perspective for 3D effects */
+.content-container {
+    perspective: 2000px;
+    perspective-origin: 50% 50%;
+}
+
+/* Optional: Add subtle floating animation */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+.right.visible:hover {
+    animation: float 3s ease-in-out infinite;
+}
